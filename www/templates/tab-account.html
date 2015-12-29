@@ -1,0 +1,14 @@
+<ion-view view-title="Account">
+  <ion-content>
+    <ion-list>
+    <ion-toggle  ng-model="settings.enableFriends">
+        Enable Friends
+    </ion-toggle>
+    </ion-list>
+
+    <form ng-submit="call(money)">
+      <textarea placeholder="Here" ng-model="money.value" ui-money-mask></textarea>
+      <button type="submit">Send</button>
+    </form>
+  </ion-content>
+</ion-view>
